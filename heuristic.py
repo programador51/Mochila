@@ -5,7 +5,7 @@ from heuristic_functions import *
 if len(sys.argv)==2:
 	file = sys.argv[1]
 else:
-	print("\nPlease, compute on the args the '*.txt' file that contains the instance")
+	print("\nPlease, compute on the args the '*.txt' file that contains the instance to solve")
 	sys.exit()
 
 items,n,w = read_instance(file)
