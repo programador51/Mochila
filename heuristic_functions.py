@@ -44,7 +44,7 @@ def calculate_b(items_sort,n):
 		'''Appends auxiliar variables something like this:
 		[ index of item , bi , vi , wi ]
 		'''
-		aux_items_sort.sort(key=itemgetter(1),reverse=True) # Sorts the aux variables by highest bi
+	aux_items_sort.sort(key=itemgetter(1),reverse=True) # Sorts the aux variables by highest bi
 	for i in range(0,n):
 		del aux_items_sort[i][1] 
 		'''Once sorted, we delete the bi value, because it's already sorted by highest bi
