@@ -32,7 +32,7 @@ def objective_f(w,items,n): # Evaluates the data to decide if put it or not on t
 			elements.add(items[i][0]) # Adds the put item on the set
 		if(current_w==0): # If current capacity = 0, the following items won't fit, so stops the evualation
 			break;
-	print("The objects put on the Knapsack are: "+str(elements)) # Prints the put items on the backpack
+	#print("The objects put on the Knapsack are: "+str(elements)) # Prints the put items on the backpack
 	print("\nThe Objective Function = "+str(k)+"\n\n\n") # Prints the final gain
 	return k
 
