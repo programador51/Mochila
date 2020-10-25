@@ -32,7 +32,7 @@ def objective_f(w,items,n): # Evaluates the data to decide if put it or not on t
 			elements.add(items[i][0]) # Adds the put item on the set
 		if(current_w==0): # If current capacity = 0, the following items won't fit, so stops the evualation
 			break;
-	print("The objects put on the Knapsack are: "+str(elements)) # Prints the put items on the backpack
+	#print("The objects put on the Knapsack are: "+str(elements)) # Prints the put items on the backpack
 	print("\nThe Objective Function = "+str(k)+"\n\n\n") # Prints the final gain
 	return k
 
@@ -44,7 +44,7 @@ def calculate_b(items_sort,n):
 		'''Appends auxiliar variables something like this:
 		[ index of item , bi , vi , wi ]
 		'''
-		aux_items_sort.sort(key=itemgetter(1),reverse=True) # Sorts the aux variables by highest bi
+	aux_items_sort.sort(key=itemgetter(1),reverse=True) # Sorts the aux variables by highest bi
 	for i in range(0,n):
 		del aux_items_sort[i][1] 
 		'''Once sorted, we delete the bi value, because it's already sorted by highest bi
